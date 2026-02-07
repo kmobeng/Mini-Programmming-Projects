@@ -19,7 +19,7 @@
 // • After the loop, print the Total Units in Warehouse.
 // • Print the Total Number of Items to Reorder.
 
-public class totalStock {
+public class TotalStock {
     public static void main(String[] args) {
         int stockLevels[] = { 12, 45, 8, 100, 3, 25 };
         int reorderCount = 0, totalStock = 0;

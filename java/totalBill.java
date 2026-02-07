@@ -17,7 +17,7 @@
 // • If a discount was applied, print: " (20% Discount Applied!)".
 // • After the loop, print the Total Bill Amount.
 
-public class totalBill {
+public class TotalBill {
     public static void main(String[] args) {
         double prices[] = { 15.0, 55.0, 120.0, 200.0 };
         double totalBill = 0.0;
@@ -26,13 +26,13 @@ public class totalBill {
             if (prices[i] > 100.0) {
                 prices[i] *= 0.8;
                 totalBill += prices[i];
-                System.out.println("Item " + (i+1) + " = " + prices[i] + " (20% Discount Applied!)");
+                System.out.println("Item " + (i + 1) + " = " + prices[i] + " (20% Discount Applied!)");
             } else {
                 totalBill += prices[i];
                 System.out.println("Item " + (i + 1) + " = " + prices[i]);
             }
         }
 
-        System.out.println("Total Bill: " +  totalBill);
+        System.out.println("Total Bill: " + totalBill);
     }
 }
