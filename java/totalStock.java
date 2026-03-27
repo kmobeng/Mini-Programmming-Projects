@@ -28,6 +28,7 @@ public class TotalStock {
             if (stockLevels[i] < 10) {
                 System.out.println("Item" + (i + 1) + ": " + stockLevels[i] + " units - CRITICAL: Reorder immediately!");
                 reorderCount += 1;
+                totalStock += stockLevels[i];
             } else {
                 System.out.println("Item" + (i + 1) + ": " + stockLevels[i] + " units - Stable");
                 totalStock += stockLevels[i];
