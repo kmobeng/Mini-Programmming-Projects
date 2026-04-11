@@ -7,17 +7,14 @@ public class TestScoresClass {
         Scanner input = new Scanner(System.in);
         TestScores testScores = new TestScores();
 
-        for (int i = 1; i <= 3; i++) {
-            double score;
-            do {
-                System.out.print("Enter test score " + i + ": ");
-                score = input.nextDouble();
-                if (score < 0 || score > 100)
-                    System.out.println("Test score must be between 0 and 100. Try again.");
-            } while (score < 0 || score > 100);
+        System.out.print("Enter score 1: ");
+        testScores.setScore1(input.nextDouble());
 
-            testScores.setScore(i, score);
-        }
+        System.out.print("Enter score 2: ");
+        testScores.setScore2(input.nextDouble());
+
+        System.out.print("Enter score 3: ");
+        testScores.setScore3(input.nextDouble());
 
         System.out.println("Average test score: " + testScores.getAverage());
 
@@ -30,20 +27,16 @@ class TestScores {
     private double score2;
     private double score3;
 
-    public void setScore(int testNumber, double score) {
-        switch (testNumber) {
-            case 1:
-                this.score1 = score;
-                break;
-            case 2:
-                this.score2 = score;
-                break;
-            case 3:
-                this.score3 = score;
-                break;
-            default:
-                System.out.println("Invalid test number. Please enter 1, 2, or 3.");
-        }
+    public void setScore1(double score1) {
+        this.score1 = score1;
+    }
+
+    public void setScore2(double score2) {
+        this.score2 = score2;
+    }
+
+    public void setScore3(double score3) {
+        this.score3 = score3;
     }
 
     public double getAverage() {

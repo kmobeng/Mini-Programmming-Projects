@@ -19,7 +19,7 @@ public class RandonNumberGuessing {
                 System.out.println("Too low, try again");
             } else {
                 isNumber = true;
-                System.out.println("Congratulations! You guessed the number in " + counter + " attempts.");
+                System.out.println("Congratulations! You guessed the number in " + (counter + 1) + " attempts.");
             }
             counter++;
         } while (!isNumber);

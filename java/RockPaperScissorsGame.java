@@ -1,4 +1,4 @@
-// Write a program that lets the user playy the game of Rock, Paper,Scissors against the computer. The program should work as follows:
+// Write a program that lets the user play the game of Rock, Paper,Scissors against the computer. The program should work as follows:
 // When the program begins, a random number in the range of 1 through 3 is generated. If the number is 1, the computer has chosen rock. If the number is 2, the computer has chosen paper. If the number is 3, the computer has chosen scissors. (Don't display the computer's choice to the user at this point.)
 // The user enters his or her choice of rock, paper, or scissors. (You can use a menu if you prefer.)
 // The computer's choice is displayed. 

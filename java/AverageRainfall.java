@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class AverageRainfall {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int years = 0;
+        int years;
 
         do {
             System.out.print("Enter the number of years: ");
